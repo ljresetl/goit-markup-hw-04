@@ -135,13 +135,14 @@ img {
 
 /* Головний банер */
 .one-section {
-        background-color: #2e2f42; /* Задає темно-сірий фон для секції. */
+        background-image: url('/images/people-office.jpg') ; /* Шлях до вашої картинки */
+        background-size: cover; /* Зображення розтягується, щоб заповнити елемент */
+        background-position: center; /* Центрування зображення в елементі */
+        background-repeat: no-repeat; /* Забороняє повторення зображення */
+        background-color: rgba(46, 47, 66, 0.7); /* Чорний напівпрозорий шар */
+        background-blend-mode: darken; /*Затемнення через змішування */
         color: white; /* Білий текст */
         text-align: center; /* Центрує текст */
-        /* padding-bottom: 292px;
-        padding-left: 472px;
-        padding-top: 116px;
-        padding-right: 472px; */
         padding-top: 188px;
         padding-bottom: 188px;
 }
