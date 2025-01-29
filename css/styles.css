@@ -75,6 +75,22 @@ img {
         list-style: none; /* Прибрано маркери */
         margin: 0;
         padding: 0;
+
+
+        position: relative;
+}
+
+.menu-link-after::after {
+        content: '';
+        display: block;
+        border-radius: 2px;
+        width: 48px;
+        height: 4px;
+        background: #404bbf;
+
+        top: 44px;
+        position: absolute;
+        align-items: center;
 }
 
 .menu-link {
@@ -135,11 +151,20 @@ img {
 
 /* Головний банер */
 .one-section {
-        background-image: url('/images/people-office.jpg') ; /* Шлях до вашої картинки */
-        background-size: cover; /* Зображення розтягується, щоб заповнити елемент */
+        background-color: #777;
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), /* градієнт має мінімум двазначення, градієнт щоб затемнити фон накладається зверху,завжди перед картинкою бо те що перше записується то є зверху*/
+        rgba(46, 47, 66, 0.7)),
+        url('../images/people-office.jpg') ; /* Шлях до картинки */
+        background-size: cover; /*Зображення розтягується, щоб заповнити елемент */
+
+        max-width: 1440px;
+        margin: 0 auto;
+
+
         background-position: center; /* Центрування зображення в елементі */
         background-repeat: no-repeat; /* Забороняє повторення зображення */
-        background-color: rgba(46, 47, 66, 0.7); /* Чорний напівпрозорий шар */
+        /*background-color: rgba(46, 47, 66, 0.7);  Чорний напівпрозорий шар */
         background-blend-mode: darken; /*Затемнення через змішування */
         color: white; /* Білий текст */
         text-align: center; /* Центрує текст */
