@@ -248,6 +248,23 @@ img {
         /*text-align: center;  Центрує елементи списку */
 }
 
+.icon-two-section {
+        display: flex;
+        justify-content: center;
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        width: 264px;
+        height: 112px;
+        align-items: center;
+}
+
+.two-section-list {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+}
+
 .three-strategy-h {
         font-weight: 500; /* Встановлює середню жирність тексту. */
         font-size: 20px; /* Задає розмір шрифту. */
@@ -332,6 +349,22 @@ img {
 
 }
 
+.social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        list-style: none;
+        padding: 0;
+        margin-top: 8px;
+
+}
+
+.social-icons li {
+        display: inline-block;
+                
+}
+
+
 /* Розділ "Our Portfolio" */
 .four_section {
         padding: 120px 0;
@@ -391,16 +424,22 @@ img {
         letter-spacing: 0.02em;
         color: #434455;
 }
+
 /* Футер */
 .footer_test {
-        background: #2e2f42; /* Встановлює темно-сірий фон для футера. */
-        padding: 100px 0; /*Відступи зверху і знизу */
-        color: #777; /* Колір тексту */
+        background: #2e2f42;
+        /* Встановлює темно-сірий фон для футера. */
+        padding: 100px 0;
+        /* Відступи зверху і знизу */
+        color: #777;
+        /* Колір тексту */
 }
 
 .footer_test a {
-        display: inline-block; /*Блочні властивості для посилання */
-        margin-bottom: 16px; /*Відступ між посиланням та параграфом */
+        display: inline-block;
+        /* Блочні властивості для посилання */
+        margin-bottom: 16px;
+        /* Відступ між посиланням та параграфом */
 }
 
 .footer_test .main_logo {
@@ -410,11 +449,8 @@ img {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
-        text-decoration: none; /* Прибирає підкреслення з логотипа */
-
-        
-
-
+        text-decoration: none;
+        /* Прибирає підкреслення з логотипа */
 }
 
 .footer_test .main_logo span {
@@ -427,10 +463,105 @@ img {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
-        font-family: "Roboto", sans-serif; /* Використовує шрифт "Roboto". */ 
-        max-width: 264px; /* Максимальна ширина тексту */
-
+        font-family: "Roboto", sans-serif;
+        /* Використовує шрифт "Roboto". */
+        max-width: 264px;
+        /* Максимальна ширина тексту */
+        margin-right: 120px;
 }
+
+/* Футер */
+.footer_test {
+        background: #2e2f42;
+        /* Встановлює темно-сірий фон для футера. */
+        padding: 100px 0;
+        /* Відступи зверху і знизу */
+        color: #777;
+        /* Колір тексту */
+}
+
+/* Контейнер для футера */
+.container_footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        flex-wrap: wrap;
+        /* Дозволяє елементам переноситися на новий рядок при необхідності */
+}
+
+/* Логотип і текст */
+.footer-left {
+        max-width: 50%;
+        margin-right: 120px; /* Встановлює відстань між першим і другим блоком */
+}
+
+.main_logo {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.16667;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #4d5ae5;
+        text-decoration: none;/* Прибирає підкреслення з логотипа */
+}
+
+.footer-left .main_logo span {
+        color: #f4f4fd;
+}
+
+.text_p_footer {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #f4f4fd;
+        font-family: "Roboto", sans-serif;
+        /* Використовує шрифт "Roboto". */
+        max-width: 264px;
+        /* Максимальна ширина тексту */
+}
+
+/* Соціальні іконки */
+.social-media {
+        text-align: left;
+        /* Вирівнюємо текст ліворуч для відповідності з іншими елементами */
+}
+
+.social-title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.16667;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #f4f4fd;
+        text-align: center;
+        margin-bottom: 16px; /* Відступ між заголовком і іконками */
+}
+
+.social-icons {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start; /* Вирівнюємо іконки ліворуч */
+}
+
+.social-icons li {
+        margin: 0 16px;
+}
+
+.social-icons a {
+        color: #f4f4fd;
+        text-decoration: none;
+}
+
+.social-icons svg {
+        width: 40px;
+        height: 40px;
+}
+
+
+
 
 /* Падінг (англ. padding, внутрішнє поле) — це відстань між контентом елемента і його рамкою (border). 
 Використовується для декоративних ефектів. Не можна вказувати негативні значення. */
