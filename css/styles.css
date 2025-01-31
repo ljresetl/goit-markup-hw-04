@@ -271,6 +271,8 @@ img {
         width: 264px;
         height: 112px;
         align-items: center;
+        background-color: #f4f4fd;
+        margin-bottom: 8px;
 }
 
 .two-section-list {
