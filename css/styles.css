@@ -570,6 +570,34 @@ img {
         width: calc((100% - 48px) / 3);
 }
 
+.four_section_li:hover .four_section_licover {
+        transform: translateY(0);
+}
+
+.div-licover {
+        position: relative;
+        overflow: hidden;
+}
+
+.four_section_licover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 40px 32px 164px 32px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #f4f4fd;
+        font-family: "Roboto", sans-serif;
+        background: #4d5ae5;
+        transform: translateY(100%);
+        width: 100%;
+        transition: transform 1000ms linear;
+        overflow: auto;
+}
+
 .spusok {
         padding: 32px 16px;
         border: 1px solid #e7e9fc;
