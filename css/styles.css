@@ -112,9 +112,8 @@ img {
         /* Прибрано маркери */
         margin: 0;
         padding: 0;
-
-
-        /* position: relative; */
+        position: relative;
+        transition-property: color;
 }
 
 
@@ -122,11 +121,12 @@ img {
         content: '';
         display: block;
         border-radius: 2px;
-        width: 48px;
+        width: 100%;
         height: 4px;
         background: #404bbf;
-        bottom: -1px;
-        top: 66px;
+        bottom: 0px;
+        /* bottom: -1px; */
+        /* top: 66px; */
         position: absolute;
         align-items: center;
 }
