@@ -22,6 +22,7 @@ body {
 }
 
 .container {
+        flex-wrap: wrap;
         max-width: 1158px;
         /* Максимальна ширина контейнера */
         margin: 0 auto;
@@ -129,10 +130,11 @@ img {
         /* top: 66px; */
         position: absolute;
         align-items: center;
+        transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link {
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
         /* color: #404bbf; */
         position: relative;
         padding-top: 24px;
@@ -320,6 +322,7 @@ img {
 
 /* Розділ "Advantages" */
 .two-section {
+        /* flex-wrap: wrap; */
         padding: 120px 0;
         /* Відступи зверху і знизу */
 }
@@ -342,6 +345,7 @@ img {
 }
 
 .two-section-ul {
+        /* flex-wrap: wrap; */
         display: flex;
         grid-template-columns: repeat(4, 1fr);
         /* Розміщує елементи в 4 колонки */
@@ -352,6 +356,7 @@ img {
 }
 
 .two-section-li {
+        /* flex-wrap: wrap; */
         width: calc((100% - 72px) / 4);
         /*text-align: center;  Центрує елементи списку */
 }
@@ -451,9 +456,11 @@ img {
         /* Вирівнювання відступів */
         margin: 0;
         /* Вирівнювання відступів */
+        flex-wrap: wrap;
 }
 
 .three-section-item {
+        padding: 0px 0px 32px 0px;
         background-color: #fff;
         /* Задає білий фон для першого елемента списку. */
 
@@ -504,26 +511,53 @@ img {
         justify-content: center;
         gap: 24px;
         list-style: none;
+        align-items: center;
         /* background-color: #777; */
 
 }
 
-.div-name-role {
+.social a {
+        display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                gap: 24px;
+}
+
+/* .social {
         display: flex;
         align-items: center;
+        gap: 24px;
+} */
+
+.div-name-role {
+        /* display: flex;
+        align-items: center;
         justify-content: center;
-        flex-direction: row;
+        flex-direction: row; */
         gap: 24px;      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 }
 
 .social-icon {
         margin-bottom: 32px;
-        gap: 24px;
+        /* gap: 24px; */
         /* fill: #4d5ae5; */
         border-radius: 50%;
         width: 40px;
         height: 40px;
         background-color: #404BBF;
+
+        background-color: var(--primary-color, #4d5ae5);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon:hover,
+.social-icon:focus {
+        background-color: #404bbf;
 }
 
 
@@ -571,11 +605,12 @@ img {
 }
 
 .four_section_li:hover .four_section_licover {
+        opacity: 1;
         transform: translateY(0%);
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.div-licover {
+.text-up {
         position: relative;
         overflow: hidden;
 }
@@ -600,7 +635,8 @@ img {
         /* transition: transform 1000ms linear; */
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        overflow: auto;
+        /* overflow: auto; */
+        overflow: hidden;
 }
 
 .spusok {
@@ -626,6 +662,8 @@ img {
         letter-spacing: 0.02em;
         color: #434455;
 }
+
+
 
 /* Футер */
 .footer_test {
@@ -761,9 +799,26 @@ img {
         text-decoration: none;
 }
 
+
+
 .social-icons svg {
         width: 40px;
         height: 40px;
+}
+
+.social-icon {
+        background-color: var(--primary-color, #4d5ae5);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill: var(--icon-color, #f4f4fd);
+}
+
+.social-icon:hover,
+.social-icon:focus {
+        background-color: #31d0aa;
+}
+
+.social-icons-two svg {
+        fill: #4d5ae5;
 }
 
 
