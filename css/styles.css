@@ -691,9 +691,87 @@ img {
         color: #434455;
 }
 
-
-/* футер */
+/* Загальні стилі для футера */
 .footer_test {
+        background: #2e2f42;
+        padding: 100px 0;
+        color: #f4f4fd;
+}
+
+.container_footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+}
+
+.footer-left {
+        margin-right: 120px;
+}
+
+.main_logo {
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #4d5ae5;
+        text-decoration: none;
+}
+
+.text_p_footer {
+        font-size: 16px;
+        line-height: 1.5;
+        max-width: 264px;
+}
+
+/* Контейнер для соцмереж */
+.social-media {
+        text-align: left;
+}
+
+.social-title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--white-color, #ffffff);
+        margin-bottom: 16px;
+}
+
+.social-icons-two {
+        display: flex;
+        gap: 16px;
+        list-style: none;
+        padding: 0;
+}
+
+.social-icons-two li {
+        width: 40px;
+        height: 40px;
+}
+
+.social-icons-two a {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: var(--primary-color, #4d5ae5);
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icons-two a:hover,
+.social-icons-two a:focus {
+        background-color: #31d0aa;
+}
+
+.social-icons-two svg {
+        width: 24px;
+        height: 24px;
+        fill: var(--icon-color, #f4f4fd);
+}
+/* футер */
+/* .footer_test {
         background: #2e2f42;
         padding: 100px 0;
         color: #f4f4fd;
@@ -757,7 +835,7 @@ img {
 
 .social-icons-two a:hover svg {
         fill: #31d0aa;
-}
+} */
 
 
 
