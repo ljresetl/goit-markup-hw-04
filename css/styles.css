@@ -683,7 +683,7 @@ fill: #f4f4fd;
 
 .container_footer {
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         align-items: baseline;
         flex-wrap: wrap;
 }
