@@ -608,7 +608,7 @@ fill: #f4f4fd;
 
 .four_section_li {
         width: calc((100% - 48px) / 3);
-        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        /* transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .four_section_li:hover {
@@ -640,11 +640,11 @@ fill: #f4f4fd;
         width: 100%;
         height: 100%;
         padding: 40px 32px;
-        /* transition: transform 1000ms linear; */
-        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform 500ms linear;
+        /* transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        /* overflow: auto; */
-        overflow: hidden;
+        overflow: auto;
+        /* overflow: hidden; */
 }
 
 .spusok {
