@@ -536,7 +536,8 @@ img {
 
 .social {
         display: flex;
-        gap: 16px;
+        justify-content: center;
+        gap: 24px;
         list-style: none;
         padding: 0;
 }
